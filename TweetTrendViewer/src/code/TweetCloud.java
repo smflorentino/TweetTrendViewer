@@ -21,7 +21,8 @@ public class TweetCloud {
 		cloud = new Cloud(); // create cloud 
 		cloud.setMaxWeight(50.0); // max font size
 //		TODO: change to be variable path name
-		ResultReader r = new ResultReader("inputs/tags.txt");
+		ResultReader r= new ResultReader();
+		//ResultReader r = new ResultReader("inputs/tags.txt");
 		r.getWordCounts();
 		tags = r.getTags();
 		cloud.addTags(tags);

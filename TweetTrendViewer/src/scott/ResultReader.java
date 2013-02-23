@@ -25,6 +25,7 @@ public class ResultReader {
 			try {
 				if(path.equals("q")) { System.exit(0); }
 				sc = new BufferedReader(new FileReader(path));
+				break;
 			} catch (FileNotFoundException e1) {
 				//JOptionPane.showMessageDialog(null, e1, path, 0, null);
 				System.err.println("Unable to load the file specified.");
