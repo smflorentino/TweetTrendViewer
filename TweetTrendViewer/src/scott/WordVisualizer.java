@@ -5,7 +5,7 @@ import java.awt.BorderLayout;
 import javax.swing.JFrame;
 
 import processing.core.*;
-
+//run this program!
 public class WordVisualizer {
 	static public void main(String args[]) {
 		// This method works!
