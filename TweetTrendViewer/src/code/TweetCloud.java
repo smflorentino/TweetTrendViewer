@@ -7,6 +7,8 @@ import javax.swing.JEditorPane;
 import org.mcavallo.opencloud.*;
 import org.mcavallo.opencloud.formatters.*;
 
+import scott.ResultReader;
+
 
 public class TweetCloud {
 	private Cloud cloud;
