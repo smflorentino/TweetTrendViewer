@@ -1,7 +1,6 @@
 package scott;
 
 /*
- Copyright 2010 Daniel Bernier
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -60,17 +59,6 @@ public class WordCramEngine extends PApplet {
 	//PGraphics pg;
 	private void initWordCram() {
 		background(100);
-		/*Word[] alphabet = new Word[] {
-				  new Word("A", 8000), new Word("B", 4000), new Word("C", 200), 
-				  new Word("D", 23), new Word("E", 22), new Word("F", 21),
-				  new Word("G", 20), new Word("H", 19), new Word("I", 18),
-				  new Word("J", 17), new Word("K", 16), new Word("L", 15),
-				  new Word("M", 14), new Word("N", 13), new Word("O", 12),
-				  new Word("P", 11), new Word("Q", 10), new Word("R", 9),
-				  new Word("S", 8),  new Word("T", 7),  new Word("U", 6),
-				  new Word("V", 5),  new Word("W", 4),  new Word("X", 3),
-				  new Word("Y", 2),  new Word("Z", 1)
-				};*/
 		ResultReader r = new ResultReader();
 		r.getWordCounts();
 		Word[] alphabet= r.getWords();
@@ -156,15 +144,4 @@ public class WordCramEngine extends PApplet {
 		}
 	}
 	
-	private String textFilePath() {
-		return "example/tao-te-ching.txt";
-	}
-	
-	private Word[] alphabet() {
-		Word[] w = new Word[26];
-		for (int i = 0; i < w.length; i++) {
-			w[i] = new Word(new String(new char[]{(char)(i+65)}), 26-i);
-		}
-		return w;
-	}
 }

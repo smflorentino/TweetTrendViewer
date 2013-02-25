@@ -10,7 +10,11 @@ import org.mcavallo.opencloud.formatters.*;
 import scott.ResultReader;
 
 
-public class TweetCloud {
+/**
+ * See WordVisualizer.java for a working visualization tool.
+ */
+
+/*public class TweetCloud {
 	private Cloud cloud;
 	private ArrayList<Tag> tags;
 	
@@ -40,4 +44,4 @@ public class TweetCloud {
 //		Tag tag = new Tag(word, weight);	
 //	}
 
-}
+}*/
